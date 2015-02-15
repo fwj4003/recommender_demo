@@ -1,0 +1,29 @@
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+<div id="container">
+    {% if data %}
+    <h3>以下是您对shiyuan404韩剧推荐系统中可能感兴趣的部分：</h3>
+    <ol>
+    {% for i in data %}
+    <li>
+    	<a href="http://movie.douban.com/subject/{{ i.id }}">{{ i.title }}</a>
+    </li>
+    {% endfor %}
+    </ol>
+	{% else %}
+	<h3>非常对不起，系统能力有限未能给您推荐合适的韩剧</h3>
+    {% endif %}
+    <p>
+    	谢谢使用~
+    </p>
+    <a href="http://www.shiyuan404.com">shiyuan404</a>
+    <span>|</span>
+    <a href="http://ccnu.xyz">Recommendation</a>
+    <span>|</span>
+    <a href=mailto:shiyuan404@hotmail.com>mail to me</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>韩剧推荐系统</title>
+		<script src="../static/home/js/jquery.min.js"></script>
+		<script src="../static/home/js/jquery.dropotron.min.js"></script>
+		<script src="../static/home/js/jquery.scrolly.min.js"></script>
+		<script src="../static/home/js/jquery.onvisible.min.js"></script>
+		<script src="../static/home/js/skel.min.js"></script>
+		<script src="../static/home/js/skel-layers.min.js"></script>
+		<script src="../static/home/js/init.js"></script>
+		<link rel="stylesheet" href="../static/home/css/skel.css" />
+		<link rel="stylesheet" href="../static/home/css/style.css" />
+		<link rel="stylesheet" href="../static/home/css/style-noscript.css" />
+	</head>
+	<body class="homepage">
+			<div id="header">
+					<div class="inner">
+						<header>
+							<h1><a>韩剧推荐系统</a></h1>
+							<hr />
+							<p>你可以选择以下两种推荐算法获取你可能感兴趣的韩剧</p>
+							<br>
+							{% if data %}
+							<p>{{ data }}</p>
+							{% endif %}
+						</header>
+						<footer>
+							<a href="/preference/0" class="button circled scrolly">基于用户</a>
+							<span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+							<a href="/preference/3" class="button circled scrolly">基于内容</a>
+						</footer>
+					</div>
+			</div>
+	</body>
+</html>
